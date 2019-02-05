@@ -9,6 +9,36 @@ const sectionTwoNode = document.getElementById('section-two');
 const strengthRangeNode = document.getElementById('coding-strength');
 
 
-strengthRangeMode.addEventListener('change', function() {
-    strengthNumberNode.textContent =  
+strengthRangeNode.addEventListener('change', function() {
+    strengthNumberNode.textContent = strengthRangeNode.value;
+});
+
+yesNode.addEventListener('change', function(){
+    if(yesNode.checked) {
+        strengthNumberNode.textContent = 1;
+        strengthRangeNode.min = 1;
+        strengthRangeNode.value = 1;
+        strengthRangeNode.disabled = false;
+        sectionTwoNode.required = yesNode.checked;
+    }
+});
+
+noNode.addEventListener('change', function() {
+    strengthNumberNode.textContent = 0;
+    strengthRangeNode.max = 0;
+    strengthRangeNode.value = 0;
+    strengthRangeNode.disabled = true;
+    sectionTwoNode.required = !noNode.checked;
+});
+
+formNode.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    console.log(formNode.elements.name.value);
+
+    const applicant = {
+        name: nameNode.value,
+        location: location.value,
+        strengthScale: strengthRangeNode.value,
+    };
 });

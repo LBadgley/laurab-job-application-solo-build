@@ -2,9 +2,13 @@ header {
     display: flex;
     justify-content: flex-right;
 }
-
+#about-you {
+    border: 1px solid black;
+    padding: 10px;
+}
 #section-two {
     border: 1px solid black;
+    padding: 10px;
     /* display: flex; */
     /* justify-content: flex-center; */
     

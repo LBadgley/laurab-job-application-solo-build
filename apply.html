@@ -7,34 +7,39 @@
     <title>Web Developer tutor application</title>
 </head>
 <body>
+    <header>
+        <h1>Application</h1>
+    </header>
     <main>
         <form id="form-example">
             <section id="about-you">
-                <h2>Tell Us About Yourself...</h2>
                 <p>
-                    <label for="name">Your name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        autocomplete="off"
-                        minlength="0"
-                        maxlength="30"
-                    >
+                    <h2>Tell Us About Yourself...</h2>
+                        <label for="name">Your name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="off"
+                            minlength="0"
+                            maxlength="30"
+                        >
                 </p>
+                <br />
                 <p>
                     <label for="location">Location:</label>
                     <input
                         type="text"
                         name="location"
                         id="location"
-                        minlength="0"
+                        minlength="2"
                     >
                 </p>
+               
             </section>
             <section id="section-two">
                 <h2>A few more questions...</h2>
-                <p>Available weekends?</p>
+                <p>Can you volunteer weekends?</p>
                 <p>
                     <label for="yes">Yes:</label>
                     <input 
@@ -61,7 +66,7 @@
                     </select>
                     <br/>
                     <label for="how-long">What times are you available?</label>
-                     <select id="how-long" name="how-long">
+                     <select id="how-long" name="how-long" required>
                         <option value = "" disabled selected>Choose a time:</option>
                         <option value = "morning">8:00AM to NOON</option>
                         <option value = "afternoon">NOON to 4:00PM</option>
@@ -72,11 +77,11 @@
                     <label for="coding-strength">How strong do you feel your coding skills are?</label>
                     <input
                     type="range"
-                    id="strength"
-                    name="strength"
+                    id="coding-strength"
                     min="1"
                     max="10"
-                    value = "0"
+                    name="strength"
+                    value = "1"
                     disabled = true;
                     >
                     <span id="strength-number">1</span>
