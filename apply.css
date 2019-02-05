@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: flex-right;
 }
-#about-you {
+#about-section {
     border: 1px solid black;
     padding: 10px;
 }
@@ -13,9 +13,12 @@ header {
     /* justify-content: flex-center; */
     
 }
+#weekly-availability {
+    display: flex;
+    font-size: 20px;
+    font-style: italic;
+}
 #when-available {
-    /* display: flex; */
-    border: 1px solid black;
-    padding: 10px;
+    font-size: 16px;
 }
 
