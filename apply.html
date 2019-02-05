@@ -51,29 +51,47 @@
                         name="availability"
                     >
                 </p>
-                <p>If yes- when?</p>
+                <section>If yes- when? </section> <br/>
+                <section>
+                    <label for="when-available">What days are you available?</label>
+                    <select id="when-available" name="when-available">
+                        <option value = "" disable selected>Choose days:</option>
+                        <option value = "weekdays">Weekdays</option>
+                        <option value = "weekends">Weekends</option>
+                    </select>
+                    <br/>
+                    <label for="how-long">What times are you available?</label>
+                     <select id="how-long" name="how-long">
+                        <option value = "" disabled selected>Choose a time:</option>
+                        <option value = "morning">8:00AM to NOON</option>
+                        <option value = "afternoon">NOON to 4:00PM</option>
+                        <option value = "evening">4:00PM to 7:00PM</option>
+                    </select>
+                </section>
                 <p>
-                    <label for="how-long"></label>
+                    <label for="coding-strength">How strong do you feel your coding skills are?</label>
                     <input
-                        type="range"
-                        id="time"
-                        min="1"
-                        max="4"
-                        name="availability"
+                    type="range"
+                    id="strength"
+                    name="strength"
+                    min="1"
+                    max="10"
+                    value = "0"
+                    disabled = true;
                     >
-                    <span id="availability-time">1</span>
+                    <span id="strength-number">1</span>
                 </p>
-                <p>
-                    <label for="availability-2">0</label>
-                    <input 
+            </section>
+                    <!-- <p>
+                        <label for="availability-2"></label>
+                        <input 
                         type="number"
                         id="availability-2"
                         name="availability-2"
                         min="0"
                         max="4"
-
-                </p>
-            </section>
+                        >
+                    </p> -->
         </form>
     </main>
 </body>
