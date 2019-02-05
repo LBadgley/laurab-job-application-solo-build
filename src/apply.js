@@ -1,7 +1,6 @@
 const formNode = document.getElementById('form-example');
 const nameNode = document.getElementById('name');
 const locationNode = document.getElementById('location');
-
 const daysAvailableNode = document.getElementById('days-available');
 const weekdayAvailabilityNode = document.getElementById('weekday-availability');
 const weekendAvailabilityNode = document.getElementById('weekend-availability');
@@ -60,10 +59,11 @@ formNode.addEventListener('submit', function(event) {
 
     const applicant = {
         name: nameNode.value,
-        location: location.value,
+        location: locationNode.value,
         strengthScale: strengthRangeNode.value,
+        
 
 
     };
-    console.log(applicant);
+    // console.log(applicant);
 });
