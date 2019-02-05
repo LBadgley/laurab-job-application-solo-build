@@ -18,15 +18,15 @@ strengthRangeNode.addEventListener('change', function() {
 
 
 daysAvailableNode.addEventListener('change', function() {
-    if(daysAvailableNode.value === "weekdays") {
+    if(daysAvailableNode.value === 'weekdays') {
         weekdayAvailabilityNode.hidden = false;
         weekendAvailabilityNode.hidden = true;
         timeAvailabilityNode.hidden = false;
-    } else if(daysAvailableNode.value === "weekends") {
+    } else if(daysAvailableNode.value === 'weekends') {
         weekendAvailabilityNode.hidden = false;
         weekdayAvailabilityNode.hidden = true;
         timeAvailabilityNode.hidden = false;
-    } else if(daysAvailableNode.value === "both") {
+    } else if(daysAvailableNode.value === 'both') {
         weekendAvailabilityNode.hidden = false;
         weekdayAvailabilityNode.hidden = false;
         timeAvailabilityNode.hidden = false;
@@ -61,7 +61,7 @@ formNode.addEventListener('submit', function(event) {
         name: nameNode.value,
         location: locationNode.value,
         strengthScale: strengthRangeNode.value,
-        
+
 
 
     };
