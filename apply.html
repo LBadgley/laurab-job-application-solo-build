@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apply.css">
+    <title>Web Developer tutor application</title>
+</head>
+<body>
+    <main>
+        <form id="form-example">
+            <section id="about-you">
+                <h2>Tell Us About Yourself...</h2>
+                <p>
+                    <label for="name">Your name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="off"
+                        minlength="0"
+                        maxlength="30"
+                    >
+                </p>
+                <p>
+                    <label for="location">Location:</label>
+                    <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        minlength="0"
+                    >
+                </p>
+            </section>
+            <section id="section-two">
+                <h2>A few more questions...</h2>
+                <p>Available weekends?</p>
+                <p>
+                    <label for="yes">Yes:</label>
+                    <input 
+                        type="radio"
+                        value="yes"
+                        id="yes"
+                        name="availability"
+                    >
+                    <label for="no">No:</label>
+                    <input
+                        type="radio"
+                        value="no"
+                        id="no"
+                        name="availability"
+                    >
+                </p>
+                <p>If yes- when?</p>
+                <p>
+                    <label for="how-long"></label>
+                    <input
+                        type="range"
+                        id="time"
+                        min="1"
+                        max="4"
+                        name="availability"
+                    >
+                    <span id="availability-time">1</span>
+                </p>
+                <p>
+                    <label for="availability-2">0</label>
+                    <input 
+                        type="number"
+                        id="availability-2"
+                        name="availability-2"
+                        min="0"
+                        max="4"
+
+                </p>
+            </section>
+        </form>
+    </main>
+</body>
+<script type="module" src="./src/apply.js"></script>
+</html>
